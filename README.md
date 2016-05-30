@@ -14,10 +14,10 @@ Verify that Vagrant is installed and working by typing in the terminal:
 clone this repoitory
 
 	$ git https://github.com/iageoscience/Udacity_Full_Stack_Tournament_Planner_p2.git
-	$ cd udacity-swiss-tournament
+	$ cd Udacity_Full_Stack_Tournament_Planner_p2
 	$ cd vagrant
 
-###Verify that these files exist in the newly cloned repository:###<br>
+###Verify that these files exist in the newly cloned repository:###
 
 	--tournament             #folder containing tournament files
 	----tournament.py        #file that contains the python functions which unit tests will run on
@@ -30,10 +30,10 @@ clone this repoitory
 
 ###Launch the Vagrant Box###
 
-	$ vagrant up   #to launch and provision the vagrant environment
-		is all you need to work on any project, to install every dependency that project needs, 
-		and to set up any networking or synced folders,
-		if virtualbox is not installed on the system Vagrant will take care of it and install automatically.
+	$ vagrant up    #to launch and provision the vagrant environment
+					is all you need to work on any project, to install every dependency that project needs, 
+					and to set up any networking or synced folders,
+					if virtualbox is not installed on the system Vagrant will take care of it and install automatically.
 
 	$ vagrant ssh  #to SSH login to your vagrant environment
 
@@ -56,15 +56,18 @@ clone this repoitory
 
 You should see these results:
 
-	1. Old matches can be deleted.
-	2. Player records can be deleted.
-	3. After deleting, countPlayers() returns zero.
-	4. After registering a player, countPlayers() returns 1.
-	5. Players can be registered and deleted.
+	1. countPlayers() returns 0 after initial deletePlayers() execution.
+	2. countPlayers() returns 1 after one player is registered.
+	3. countPlayers() returns 2 after two players are registered.
+	4. countPlayers() returns zero after registered players are deleted.
+	5. Player records successfully deleted.
 	6. Newly registered players appear in the standings with no matches.
 	7. After a match, players have updated standings.
-	8. After one match, players with one win are paired.
+	8. After match deletion, player standings are properly reset.
+	9. Matches are properly deleted.
+	10. After one match, players with one win are properly paired.
 	Success!  All tests pass!
+
 
 ###Shutdown Vagrant machine###
 
