@@ -13,7 +13,7 @@ Verify that Vagrant is installed and working by typing in the terminal:
 ###Clone the Repository###
 clone this repoitory
 
-	$ git clone https://github.com/iageoscience/Udacity_Full_Stack_Tournament_Planner.git
+	$ git https://github.com/iageoscience/Udacity_Full_Stack_Tournament_Planner_p2.git
 	$ cd udacity-swiss-tournament
 	$ cd vagrant
 
@@ -31,7 +31,8 @@ clone this repoitory
 ###Launch the Vagrant Box###
 
 	$ vagrant up   #to launch and provision the vagrant environment
-		is all you need to work on any project, to install every dependency that project needs, and to set up any networking or synced folders,
+		is all you need to work on any project, to install every dependency that project needs, 
+		and to set up any networking or synced folders,
 		if virtualbox is not installed on the system Vagrant will take care of it and install automatically.
 
 	$ vagrant ssh  #to SSH login to your vagrant environment
